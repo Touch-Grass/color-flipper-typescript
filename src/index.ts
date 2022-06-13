@@ -19,7 +19,6 @@ function getColor() {
     
     btnAcid!.onmouseover = function () { startAcidTrip(); };
     function startAcidTrip() {
-        // document.body.style.background = getColor(); 
-        console.log(`acid trip started`);
+        document.body.style.background = getColor(); 
         setTimeout(startAcidTrip,100);
     }

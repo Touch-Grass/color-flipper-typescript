@@ -14,7 +14,7 @@ function getColor() {
 }
 btnAcid.onmouseover = function () { startAcidTrip(); };
 function startAcidTrip() {
-    console.log(`acid trip started`);
+    document.body.style.background = getColor();
     setTimeout(startAcidTrip, 100);
 }
 //# sourceMappingURL=index.js.map
