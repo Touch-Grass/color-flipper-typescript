@@ -4,6 +4,7 @@
     <title>Color Flipper</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS v5.2.0-beta1 -->
@@ -11,12 +12,24 @@
     
 </head>
 <body>
-<div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-    <a id="button__flip__color--center" class="btn btn-primary" href="#" role="button">Flip Color</a>
-</div>
-
+    <div class="container">
+        <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+            <div class="button__group--main">
+                <a id="button__flip__color--center" style="padding: 2rem;" class="btn btn-primary" role="button">Change Color</a>
+                <a onmouseover="repeater=setInterval(startAcidTrip(), 10);" id="button__acid__trip" style="margin-top: 3px;padding: 2rem;" class="btn btn-primary" role="button">Acid Trip Mode</a>
+            </div>
+        </div>
+    </div>
+    
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
+<style>
+.button__group--main{
+    width: 15vw;
+    height: 15vh;
+}
+</style>
 </html>
